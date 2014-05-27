@@ -14,4 +14,6 @@
 
 - (const char*) toCString;
 
+- (String*) appendString: (String*)str;
+
 @end
