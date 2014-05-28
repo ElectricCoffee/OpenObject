@@ -42,6 +42,10 @@
     return _count;
 }
 
+- (int) index {
+  return [self count] - 1;
+}
+
 - (List*) cons: (id) val {
     return [[List alloc] initWithHead: val andTail: self];
 }
