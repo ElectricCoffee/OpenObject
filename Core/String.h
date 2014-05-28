@@ -10,10 +10,13 @@
   const char* _val;
 }
 
+// creates the object with a C-String
 - (id) initWithCString: (const char*)cstr;
 
+// returns a character array
 - (const char*) toCString;
 
+// returns the current string, with a new string appended to it
 - (String*) appendString: (String*)str;
 
 @end

@@ -42,23 +42,6 @@
     return _count;
 }
 
-- (int) index {
-  return [self count] - 1;
-}
-
-- (id) valueAtIndex: (int)ind {
-  List *temp = self;
-
-  while(self) {
-    if ([self index] != ind)
-        temp = [temp tail];
-    else
-        return [temp head];
-  }
-  
-  return nil;
-}
-
 - (List*) cons: (id) val {
     return [[List alloc] initWithHead: val andTail: self];
 }

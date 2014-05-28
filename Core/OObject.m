@@ -10,12 +10,16 @@
   return self;
 }
 
-- (void) dealloc {
+- (void) destroy {
   object_dispose(self);
 }
 
 - (String*) toString {
-  return [[String alloc] initWithCString: "object"];
+  return [[String alloc] initWithCString: object_getClassName(self)];
+}
+
+- (Class) class {
+  return object_getClass(self);
 }
 
 @end
