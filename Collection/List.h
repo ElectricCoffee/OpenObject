@@ -11,6 +11,7 @@
 - (id) initWithValues: (id)arg1, ...;
 - (int) count;
 - (int) index;
+- (id) valueAtIndex: (int)ind;
 - (List*) cons:(id) val;
 - (List*) reverse;
 - (String*) toString;
