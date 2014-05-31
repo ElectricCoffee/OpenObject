@@ -6,7 +6,9 @@
  * with the objc runtime's built-in Object class
  * OObject is also fitting given the project's name.
  */
-@interface OObject
+@interface OObject {
+  Class isa;
+}
 // allocate memory
 + (id) alloc;
 // initialise class with default variables
